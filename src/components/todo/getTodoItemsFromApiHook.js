@@ -44,7 +44,6 @@ export const useGetTodoItemsFromApi = (show) => {
         setSyncdApi(true);
       }
       
-      console.log(increment);
       const store = getStore("TODOS", `items${predicate}`);
       setItems(store);
     })();
